@@ -158,7 +158,6 @@ MindCera
 * HTML5
 * CSS3
 * JavaScript
-* Chart.js
 
 ---
 
@@ -287,9 +286,8 @@ Screenshots will be added soon.
 
 # 👩‍💻 Developed By
 
+**Team INFINIQ-05**
 **Sanika Godase**
-
-B.Sc. Computer Science
 
 MIT Arts, Commerce & Science College, Alandi
 
