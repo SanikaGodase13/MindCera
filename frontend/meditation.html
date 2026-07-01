@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Meditation Hub</title>
+
+<link rel="stylesheet" href="assets/css/meditation.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<div class="page">
+
+    <div class="header">
+
+        <h1>🧘 Meditation Hub</h1>
+
+        <p>
+            Pause. Breathe. Reconnect with yourself.
+        </p>
+
+    </div>
+
+    <div class="meditation-grid">
+
+        <!-- BREATHING -->
+
+        <div class="card">
+
+            <h2>Guided Breathing</h2>
+
+            <p>
+                Follow the breathing circle and relax.
+            </p>
+
+            <div id="breathingCircle">
+
+                Breathe
+
+            </div>
+
+            <div id="breathingStatus">
+
+                Ready
+
+            </div>
+
+            <button onclick="startBreathing()">
+
+                Start Session
+
+            </button>
+
+        </div>
+
+        <!-- TIMER -->
+
+        <div class="card">
+
+            <h2>Meditation Timer</h2>
+
+            <p>
+                Choose a duration.
+            </p>
+
+            <div class="timer-buttons">
+
+                <button onclick="startTimer(1)">1 Min</button>
+
+                <button onclick="startTimer(3)">3 Min</button>
+
+                <button onclick="startTimer(5)">5 Min</button>
+
+                <button onclick="startTimer(10)">10 Min</button>
+
+            </div>
+
+            <div id="timerDisplay">
+
+                00:00
+
+            </div>
+
+        </div>
+
+        <!-- SOUNDS -->
+
+        <div class="card">
+
+            <h2>Relaxing Sounds</h2>
+
+            <p>
+                Listen while meditating.
+            </p>
+
+            <div class="sound-buttons">
+
+                <button onclick="playSound('rain')">
+                    🌧 Rain
+                </button>
+
+                <button onclick="playSound('ocean')">
+                    🌊 Ocean
+                </button>
+
+                <button onclick="playSound('forest')">
+                    🌲 Forest
+                </button>
+
+                <button onclick="stopSound()">
+                    ⏹ Stop
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- QUOTE -->
+
+        <div class="card quote-card">
+
+            <h2>Daily Wellness Quote</h2>
+
+            <p id="quote">
+
+                Healing is not becoming someone new.
+                It is returning to who you truly are.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="assets/js/meditation.js"></script>
+
+</body>
+
+</html>

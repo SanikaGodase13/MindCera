@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Profile</title>
+
+<link rel="stylesheet"
+href="assets/css/profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<div class="page">
+
+    <div class="profile-header">
+
+        <div class="profile-image">
+
+            <img
+            src="https://ui-avatars.com/api/?name=MindCera&background=6366F1&color=fff"
+            id="profileAvatar">
+
+        </div>
+
+        <div>
+
+            <h1 id="userName">
+                Loading...
+            </h1>
+
+            <p id="userEmail">
+                Loading...
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- PROFILE INFO -->
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>
+                👤 Personal Information
+            </h2>
+
+            <div class="info">
+
+                <label>Age</label>
+                <span id="userAge">-</span>
+
+            </div>
+
+            <div class="info">
+
+                <label>Gender</label>
+                <span id="userGender">-</span>
+
+            </div>
+
+            <div class="info">
+
+                <label>Occupation</label>
+                <span id="userOccupation">-</span>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>
+                🌱 Wellness Goal
+            </h2>
+
+            <div class="goal-box">
+
+                <p id="userGoal">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GUARDIAN SECTION -->
+
+    <div class="card">
+
+        <h2>
+            🛡 Emergency Guardian
+        </h2>
+
+        <div class="guardian-grid">
+
+            <div class="guardian-item">
+
+                <label>Name</label>
+
+                <span id="guardianName">
+                    -
+                </span>
+
+            </div>
+
+            <div class="guardian-item">
+
+                <label>Email</label>
+
+                <span id="guardianEmail">
+                    -
+                </span>
+
+            </div>
+
+            <div class="guardian-item">
+
+                <label>Phone</label>
+
+                <span id="guardianPhone">
+                    -
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- WELLNESS STATS -->
+
+    <div class="grid">
+
+        <div class="card stat-card">
+
+            <h3>
+                💬 Conversations
+            </h3>
+
+            <h2>
+                124
+            </h2>
+
+        </div>
+
+        <div class="card stat-card">
+
+            <h3>
+                🔥 Wellness Streak
+            </h3>
+
+            <h2>
+                12 Days
+            </h2>
+
+        </div>
+
+        <div class="card stat-card">
+
+            <h3>
+                ⭐ Wellness XP
+            </h3>
+
+            <h2>
+                850
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- ACTIONS -->
+
+    <div class="action-buttons">
+
+        <button class="primary-btn">
+            Edit Profile
+        </button>
+
+        <button class="secondary-btn">
+            Change Password
+        </button>
+
+        <button
+        class="logout-btn"
+        onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="assets/js/profile.js"></script>
+
+</body>
+
+</html>

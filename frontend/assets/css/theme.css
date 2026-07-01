@@ -1,0 +1,16 @@
+:root {
+    --primary: #A5D8FF;
+    --secondary: #CDB4DB;
+    --bg: #F7F9FF;
+}
+
+.dark {
+    --bg: #0F172A;
+    --primary: #38BDF8;
+    --secondary: #A78BFA;
+}
+
+body {
+    background: var(--bg);
+    transition: 0.3s;
+}

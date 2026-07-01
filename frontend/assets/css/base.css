@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #F7F9FF;
+    transition: 0.3s;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background: #EEF2FF;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.7);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+}
+
+body.dark {
+    background: #0F172A;
+    color: white;
+}
+
+body.dark .sidebar {
+    background: #111827;
+}
+
+body.dark .card {
+    background: rgba(30,41,59,0.6);
+}

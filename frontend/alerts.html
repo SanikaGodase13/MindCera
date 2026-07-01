@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Alerts</title>
+
+<link rel="stylesheet"
+href="assets/css/alerts.css">
+
+<link rel="stylesheet"
+href="assets/css/theme.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="alerts-layout">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        🧠 MindCera
+
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">
+
+            📊 Dashboard
+
+        </a>
+
+        <a href="chat.html">
+
+            💬 AI Assistant
+
+        </a>
+
+        <a class="active"
+        href="alerts.html">
+
+            🚨 Alerts
+
+        </a>
+
+        <a href="meditation.html">
+
+            🧘 Meditation
+
+        </a>
+
+        <a href="therapist.html">
+
+            👩‍⚕️ Therapists
+
+        </a>
+
+        <a href="reports.html">
+
+            📄 Reports
+
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+    <div class="page-header">
+
+        <div>
+
+            <h1>
+
+                Wellness Alerts
+
+            </h1>
+
+            <p>
+
+                Monitor emotional risk events detected by MindCera AI.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- SUMMARY -->
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+
+            <span>
+
+                Total Alerts
+
+            </span>
+
+            <h2 id="totalAlerts">
+
+                0
+
+            </h2>
+
+        </div>
+
+        <div class="summary-card">
+
+            <span>
+
+                Active Alerts
+
+            </span>
+
+            <h2 id="activeAlerts">
+
+                0
+
+            </h2>
+
+        </div>
+
+        <div class="summary-card">
+
+            <span>
+
+                High Risk
+
+            </span>
+
+            <h2 id="highRiskAlerts">
+
+                0
+
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- AI RECOMMENDATION -->
+
+    <div class="recommendation-card">
+
+        <h3>
+
+            AI Recommendation
+
+        </h3>
+
+        <p>
+
+            Regular emotional check-ins and guided meditation can help reduce stress levels and improve wellbeing.
+
+        </p>
+
+    </div>
+
+    <!-- ALERT LIST -->
+
+    <div
+    id="alertsContainer"
+    class="alerts-container">
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="assets/js/api.js"></script>
+
+<script src="assets/js/alerts.js"></script>
+
+</body>
+
+</html>

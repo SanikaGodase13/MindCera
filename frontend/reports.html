@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Wellness Report</title>
+
+<link rel="stylesheet"
+href="assets/css/reports.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<div class="page">
+
+    <div class="header">
+
+        <h1>📄 Wellness Intelligence Report</h1>
+
+        <p>
+            Personalized emotional wellness insights powered by AI.
+        </p>
+
+    </div>
+
+    <!-- TOP STATS -->
+
+    <div class="report-grid">
+
+        <div class="card stat-card">
+
+            <span>🌱 Wellness Score</span>
+
+            <h2 id="wellnessScore">
+                78%
+            </h2>
+
+        </div>
+
+        <div class="card stat-card">
+
+            <span>😊 Dominant Emotion</span>
+
+            <h2 id="dominantEmotion">
+                Joy
+            </h2>
+
+        </div>
+
+        <div class="card stat-card">
+
+            <span>🔥 Current Streak</span>
+
+            <h2>
+                12 Days
+            </h2>
+
+        </div>
+
+        <div class="card stat-card">
+
+            <span>⚠ Active Alerts</span>
+
+            <h2>
+                2
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- CHARTS -->
+
+    <div class="chart-grid">
+
+        <div class="card">
+
+            <h2>
+                Emotional Wellness Trend
+            </h2>
+
+            <canvas id="emotionTrendChart"></canvas>
+
+        </div>
+
+        <div class="card">
+
+            <h2>
+                Risk Distribution
+            </h2>
+
+            <canvas id="riskTrendChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- AI SUMMARY -->
+
+    <div class="card summary-card">
+
+        <h2>
+            🤖 AI Wellness Summary
+        </h2>
+
+        <p id="aiSummary">
+
+            This week indicates stable emotional wellbeing with
+            increased positivity and reduced emotional volatility.
+            Periodic stress was detected midweek but recovery
+            patterns remained healthy.
+
+        </p>
+
+    </div>
+
+    <!-- RECOMMENDATIONS -->
+
+    <div class="card">
+
+        <h2>
+            🎯 Personalized Recommendations
+        </h2>
+
+        <div class="recommendation-list">
+
+            <div class="recommendation">
+                🧘 Continue daily mindfulness sessions.
+            </div>
+
+            <div class="recommendation">
+                😴 Maintain healthy sleep consistency.
+            </div>
+
+            <div class="recommendation">
+                💬 Continue emotional journaling and AI check-ins.
+            </div>
+
+            <div class="recommendation">
+                🚶 Take short outdoor walks during stressful periods.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- REPORT ACTIONS -->
+
+    <div class="actions">
+
+        <button
+        class="download-btn"
+        onclick="downloadReport()">
+
+            Download Report
+
+        </button>
+
+        <button
+        class="share-btn">
+
+            Share With Guardian
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="assets/js/reports.js"></script>
+
+</body>
+
+</html>

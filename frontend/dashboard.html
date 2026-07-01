@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Dashboard</title>
+
+<link rel="stylesheet"
+href="assets/css/dashboard.css">
+
+<link rel="stylesheet"
+href="assets/css/theme.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        🧠 MindCera
+    </div>
+
+    <nav>
+
+        <a class="active" href="dashboard.html">
+            📊 Dashboard
+        </a>
+
+        <a href="chat.html">
+            💬 AI Assistant
+        </a>
+
+        <a href="alerts.html">
+            🚨 Alerts
+        </a>
+
+        <a href="meditation.html">
+            🧘 Meditation
+        </a>
+
+        <a href="therapist.html">
+            👩‍⚕️ Therapists
+        </a>
+
+        <a href="gamification.html">
+            🎮 Wellness Journey
+        </a>
+
+        <a href="reports.html">
+            📄 Reports
+        </a>
+
+        <a href="profile.html">
+            👤 Profile
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+    <!-- HEADER -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+
+                Welcome Back,
+                <span id="userName">
+                    User
+                </span>
+                👋
+
+            </h1>
+
+            <p>
+                Let's check your emotional wellbeing today.
+            </p>
+
+        </div>
+
+        <button
+        class="theme-btn"
+        onclick="toggleTheme()">
+
+            🌙
+
+        </button>
+
+    </div>
+
+    <!-- HERO CARD -->
+
+    <section class="hero-card">
+
+        <div class="score-circle">
+
+            <span id="wellnessScore">
+
+                0%
+
+            </span>
+
+        </div>
+
+        <div>
+
+            <h2>
+
+                Wellness Score
+
+            </h2>
+
+            <p id="aiInsight">
+
+                You're doing well today.
+                Keep maintaining healthy habits.
+
+            </p>
+
+            <div class="emotion-tag">
+
+                Dominant Emotion:
+
+                <span id="dominantEmotion">
+
+                    -
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <h3>
+                Conversations
+            </h3>
+
+            <p id="totalConversations">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>
+                Messages
+            </h3>
+
+            <p id="totalMessages">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>
+                Emotion Logs
+            </h3>
+
+            <p id="totalLogs">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>
+                Alerts
+            </h3>
+
+            <p id="totalAlerts">
+
+                0
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CHARTS -->
+
+    <section class="chart-grid">
+
+        <div class="chart-card">
+
+            <h3>
+
+                Emotion Distribution
+
+            </h3>
+
+            <canvas id="emotionChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>
+
+                Risk Distribution
+
+            </h3>
+
+            <canvas id="riskChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="actions-section">
+
+        <h2>
+
+            Quick Actions
+
+        </h2>
+
+        <div class="actions-grid">
+
+            <a href="chat.html">
+
+                💬 AI Chat
+
+            </a>
+
+            <a href="meditation.html">
+
+                🧘 Meditation
+
+            </a>
+
+            <a href="therapist.html">
+
+                👩‍⚕️ Therapist
+
+            </a>
+
+            <a href="reports.html">
+
+                📄 Reports
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+</div>
+
+<script src="assets/js/api.js"></script>
+
+<script src="assets/js/charts.js"></script>
+
+<script src="assets/js/dashboard.js"></script>
+
+<script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>

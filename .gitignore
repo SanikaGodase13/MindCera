@@ -1,0 +1,89 @@
+# ==========================================
+# MindCera - Git Ignore
+# ==========================================
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# -----------------------------
+# Environment Variables
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# IDEs
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# Operating System Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Database Files (if local)
+# -----------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+# -----------------------------
+# Uploads
+# Ignore uploaded user files
+# -----------------------------
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# -----------------------------
+# Audio generated at runtime
+# (remove if you store project audio)
+# -----------------------------
+frontend/assets/audio/generated/
+
+# -----------------------------
+# Node.js (future-proof)
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.tmp
+*.bak
+*.old

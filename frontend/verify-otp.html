@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<title>Verify OTP | MindCera</title>
+
+<link rel="stylesheet"
+      href="assets/css/auth.css">
+
+
+</head>
+
+<body>
+
+<div class="auth-wrapper">
+
+<div class="auth-left">
+
+    <div class="brand">
+        🧠 MindCera
+    </div>
+
+    <h1>
+        Verify Your OTP
+    </h1>
+
+    <p>
+        Enter the OTP sent to your email.
+    </p>
+
+</div>
+
+<div class="auth-right">
+
+    <div class="auth-card">
+
+        <h2>OTP Verification</h2>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address">
+
+        <input
+            type="text"
+            id="otp"
+            placeholder="Enter OTP">
+
+        <button
+            class="register-btn"
+            onclick="verifyOTP()">
+
+            Verify OTP
+
+        </button>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<script src="assets/js/api.js"></script>
+
+<script src="assets/js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>MindCera Login</title>
+
+<link rel="stylesheet"
+      href="assets/css/auth.css">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="auth-wrapper">
+
+
+<!-- LEFT PANEL -->
+
+<div class="auth-left">
+
+    <div class="brand">
+
+        🧠 MindCera
+
+    </div>
+
+    <h1>
+
+        Welcome Back To Your
+        Wellness Journey
+
+    </h1>
+
+    <p>
+
+        Continue tracking your emotional wellbeing,
+        chatting with your AI wellness assistant,
+        monitoring insights, and building healthier habits.
+
+    </p>
+
+    <div class="benefits">
+
+        <div class="benefit">
+            💬 AI Wellness Assistant
+        </div>
+
+        <div class="benefit">
+            📊 Personal Wellness Dashboard
+        </div>
+
+        <div class="benefit">
+            🚨 Early Risk Detection
+        </div>
+
+        <div class="benefit">
+            🧘 Guided Meditation Tools
+        </div>
+
+    </div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+
+<div class="auth-right">
+
+    <div class="auth-card">
+
+        <h2>
+
+            Welcome Back
+
+        </h2>
+
+        <p>
+
+            Sign in to continue your
+            mental wellness journey.
+
+        </p>
+
+        <!-- LOGIN FORM -->
+
+        <h3>
+
+            Account Login
+
+        </h3>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address">
+
+        <div class="password-container">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password">
+
+            <button
+                type="button"
+                class="show-password"
+                onclick="togglePassword()">
+
+                👁
+
+            </button>
+
+        </div>
+
+        <div
+            style="
+            display:flex;
+            justify-content:flex-end;
+            margin-top:-5px;
+            margin-bottom:20px;
+            ">
+
+            <a
+                href="forgot-password.html"
+                style="
+                color:#4F46E5;
+                text-decoration:none;
+                font-size:14px;
+                font-weight:600;
+                ">
+
+                Forgot Password?
+
+            </a>
+
+        </div>
+
+        <button
+            class="register-btn"
+            onclick="login()">
+
+            Sign In
+
+        </button>
+
+        <div class="login-link">
+
+            Don't have an account?
+
+            <a href="register.html">
+
+                Create Account
+
+            </a>
+
+        </div>
+
+        <hr
+            style="
+            margin:30px 0;
+            border:none;
+            border-top:1px solid #E5E7EB;
+            ">
+
+        <div
+            style="
+            text-align:center;
+            color:#6B7280;
+            line-height:1.8;
+            ">
+
+            🔒 Secure Authentication
+
+            <br>
+
+            Your information is protected using
+            encrypted authentication and secure storage.
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<script src="assets/js/api.js"></script>
+
+<script src="assets/js/auth.js"></script>
+
+<script>
+
+function togglePassword() {
+
+    const password =
+    document.getElementById("password");
+
+    if(password.type === "password") {
+
+        password.type = "text";
+
+    } else {
+
+        password.type = "password";
+
+    }
+}
+
+</script>
+
+</body>
+
+</html>
